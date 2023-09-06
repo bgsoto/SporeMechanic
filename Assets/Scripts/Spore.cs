@@ -25,14 +25,9 @@ public class Spore : MonoBehaviour
     {
          
 
-       if (timer < 2f)
+       if(Input.GetKeyDown(KeyCode.Space))
         {
-            timer += Time.deltaTime;
-           // spawnNextSpore();
-        }
-        else
-        {
-            timer = 0f;
+            
             spawnNextSpore();
         }
         
